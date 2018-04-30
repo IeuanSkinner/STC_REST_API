@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>STC Web App</title>
+	<script src="./webjars/jquery/3.2.1/jquery.js"></script>
+	<script src="./js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+<body>
+<h2 style="grid-area:top">This is a basic web app that uses a REST API to store a list of "users".</h2>
+<h4 style="grid-area:bottom">Written by Ieuan Skinner as an engineering exercise for the "Save The Children" charitable organisation.</h4>
+
+<!-- Main content area -->
+<div class="mainContentArea">
+	<!-- Form for submitting data -->
+	
+	<form style="grid-area:form" class="form">
+		<div class="group">
+			<input style="grid-area:firstName" type="text" name="firstname">
+	    	<span class="highlight"></span><span class="bar"></span>
+			<label>First Name</label>
+		</div>
+		
+		<div class="group">
+			<input style="grid-area:lastName" type="text" name="lastname">
+			<span class="highlight"></span><span class="bar"></span>
+			<label>Last Name</label>
+   		</div>
+   		
+		<div class="group">
+			<input style="grid-area:age" type="number" name="age">
+			<span class="highlight"></span><span class="bar"></span>
+			<label>Age</label>
+   		</div>
+   		
+		<div class="group">
+			<input style="grid-area:location" type="text" name="location">
+			<span class="highlight"></span><span class="bar"></span>
+			<label>Location</label>
+    	</div>
+    	
+		<div class="group">
+			<input style="grid-area:email" type="email" name="email">
+			<span class="highlight"></span><span class="bar"></span>
+			<label>Email</label>
+    	</div>
+    	
+      	<button class="btn btn-submit" type="submit">submit</button>
+		<!-- <input style="grid-area:submit" type="submit"> -->
+	</form>
+</div>
+</body>
+</html>
